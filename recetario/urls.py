@@ -6,6 +6,9 @@ from django.conf import settings
 admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^privado/$','principal.views.privado'),
+	url(r'^ingresar/$','principal.views.ingresar'),
+	url(r'^usuario/nuevo$','principal.views.nuevo_usuario'),
 	url(r'^comenta/$','principal.views.nuevo_comentario'),
 	url(r'^receta/nueva/$','principal.views.nueva_receta'),
 	url(r'^recetas/$','principal.views.lista_recetas'),
@@ -19,4 +22,5 @@ urlpatterns = patterns('',
 		{'document_root':settings.MEDIA_ROOT,}
 	),
 	url(r'^receta/(?P<id_receta>\d+)$','principal.views.detalle_receta'),
+	url(r'^cerrar/$', 'principal.views.cerrar'),
 )
