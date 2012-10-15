@@ -13,9 +13,11 @@
 
 {% block contenido %}
 <ul>
+	<a href="/receta/nueva">Agregar una receta</a><hr>
 	{% for dato in datos %}
 	<li>
 		<a href='{% url principal.views.detalle_receta dato.id %}'>{{dato.titulo}}</a>
+
 		<img src='{{MEDIA_URL}}{{dato.imagen}}'>
 	</li>
 	{% empty %}

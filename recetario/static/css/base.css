@@ -1,0 +1,39 @@
+body{
+	background-color: #d5d5d5;
+
+}
+body, header, footer, div, h1, h2, ul, li, a{
+	margin:5px; padding:5px;
+}
+#menu li a {
+	font-family     : Arial;
+	font-size       :11px;
+	text-decoration : none;
+	float           :left;
+	padding         : 10px;
+	background-color: #128e16;
+	color           : #fff;
+}
+
+#menu li a:hover {
+	background-color: #29c92e;
+	margin-top      :-2px;
+	padding-bottom  :12px;
+	}
+#menu li{
+	display:inline;
+}
+header{
+	background-color:#171a20;
+	color:#ffffff;
+}
+.activo{
+	font-weight: bold;
+}
+.impar {
+	background-color: #90EE90
+}
+.par{
+	background-color: #5ACC5A;
+}
+
